@@ -1,0 +1,48 @@
+.about-container {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.about-title {
+  text-align: center;
+  font-size: 32px;
+  color: #4a2c2a;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.about-highlight h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.about-highlight ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.about-highlight li {
+  background: #f9f9f9;
+  padding: 10px 15px;
+  border-left: 5px solid #27ae60;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.about-end {
+  font-size: 17px;
+  margin-top: 30px;
+  text-align: center;
+  color: #555;
+}

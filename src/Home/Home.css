@@ -1,0 +1,272 @@
+body {
+    overflow-x: auto; 
+    margin: 0; 
+}
+
+.sect {
+    display: flex;
+    position: relative;
+    width: 100%; 
+    margin: 0;
+    padding: 0; 
+}
+
+.sect .img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%; 
+    height: 500px;
+}
+
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.marquee p {
+    color: rgba(95, 72, 54, 0.808);
+    font-weight: bolder;
+    display: inline-block;
+    padding-left: 100%; 
+    animation: marquee 20s linear infinite; 
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    font-size: border;
+    background-color: rgba(95, 72, 54, 0.808);
+    border: none;
+    cursor: pointer;
+}
+
+.cate {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: repeat(3, minmax(350px, 1fr));
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.sectn {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    font-weight: bolder;
+    width: 80%; 
+    background-color: rgba(95, 72, 54, 0.808);
+    padding: 20px; 
+    text-align: center;
+    color: white; 
+}
+
+.sectn h1,p{
+    color:#fff;
+}
+.sectn h1, p {
+    text-align: center;
+}
+
+.sect1 {
+    padding: 10px;
+    width: 100%; 
+}
+
+.sect1 .text {
+    text-align: center;
+    font-weight: bold;
+}
+
+.sects {
+    display: flex;
+    position: relative;
+    width: 100%; 
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.sects .img {
+    border-radius: 20%;
+    width: 200px;
+    height: 300px;
+}
+
+.seectset {
+    display: flex;
+    flex-direction: column;
+}
+
+.sect2 {
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    width: 100%;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.img1 {
+    border-radius: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.icon {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    top: 30%;  
+}
+
+.sect2 p {
+    line-height: 1.5;
+    text-align: left;
+    padding: 50px;
+    width: 400px;
+    height: 300px;
+}
+
+
+@media (max-width: 479px) {
+    .sect .img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .sectn h1 {
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .sectn p {
+        color: #fff;
+        padding: 5px;
+        text-align: center;
+        font-size: 0.6em;
+    }
+
+    .sects .img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .sect1 .text {
+        text-align: center;
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    .img1 {
+        width: 150px;
+        height: 200px;
+    }
+
+    .sect2 {
+        width: 100%;
+    }
+
+    .sect2 p {
+        line-height: 1.6;
+        padding: 0;
+        margin-left: 3px;
+        font-size: 0.6em;
+        width: 150px;
+        height: 100px;
+    }
+
+    .cate {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+    }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    .sect .img {
+        width: 50%;
+        height: 300px;
+    }
+
+    .sects .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .sect2 {
+        width: 100%;
+    }
+
+    .sectn h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 1.0em;
+    }
+
+    .sectn p {
+        color: #fff;
+        text-align: center;
+        font-size: 0.8em;
+    }
+
+    .sect2 p {
+        padding: 10px;
+        line-height: 1.5;
+        text-align: left;
+        width: 400px;
+        height: 300px;
+    }
+
+    .cate {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .sect .img {
+        width: 50%;
+        height: 300px;
+    }
+
+    .sects .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .img1 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .sect2 p {
+        line-height: 1.5;
+        text-align: left;
+        padding: 30px;
+        width: 400px;
+    }
+
+    .cate {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+    }
+}

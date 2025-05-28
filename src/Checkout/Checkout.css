@@ -1,0 +1,93 @@
+.checkout-container {
+  max-width: 600px;
+  margin: 100px auto;
+  padding: 20px;
+   background-color: rgba(95, 72, 54, 0.808);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.empty-checkout {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-summary {
+  background-color: #f7f7f7;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.order-summary h3,p {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.order-summary ul {
+  padding: 0;
+  list-style: none;
+}
+
+.order-summary li {
+  margin-bottom: 8px;
+   color: rgba(0, 0, 0, 0.438);
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.checkout-section label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px;
+  border: none;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #1e8449;
+}
+
+@media (max-width: 479px){
+    .checkout-container {
+  max-width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+   background-color: rgba(95, 72, 54, 0.808);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+}
