@@ -1,4 +1,4 @@
-import ohasoup from './Images/oha soup.jpeg'
+import ohasoup from './Images/temp.jpeg'
 import okrosoup from './Images/okrosoup.jpeg'
 import ricefo from './Images/riceandEfo.jpeg'
 import shawarma from './Images/shawarma.jpeg'
